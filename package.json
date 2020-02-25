@@ -8,6 +8,10 @@
     "local": "now dev"
   },
   "devDependencies": {
-    "@now/node": "^1.2.0"
+    "@now/node": "^1.2.0",
+    "@types/axios": "^0.14.0"
+  },
+  "dependencies": {
+    "axios": "^0.19.2"
   }
 }
