@@ -12,7 +12,9 @@ export const getBadge = async (
   if (type === "orange") badge = ORANGE;
   if (type === "dark") badge = DARK;
   const upvotes = await getNumberOfUpvotes(id);
+  const textWidth = 3;
   return badge
+    .replace(/{WIDTH}/g, (139 + textWidth).toString())
     .replace(/{FONT}/g, font)
     .replace(/{HACKER_NEWS}/g, hackerNews)
     .replace(/{UPVOTES}/g, upvotes.toString())
