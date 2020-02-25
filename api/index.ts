@@ -3,6 +3,9 @@ import { getBadge } from "../badge";
 
 export default async (req: NowRequest, res: NowResponse) => {
   try {
+    if (typeof req.query.id !== "string")
+      throw new Error("ID should be provided");
+    const id = parseInt(req.query.id);
     const type =
       typeof req.query.type === "string" ? req.query.type : undefined;
     const font =
@@ -15,12 +18,12 @@ export default async (req: NowRequest, res: NowResponse) => {
       typeof req.query.featuredOn === "string"
         ? req.query.featuredOn
         : undefined;
-    const badge = await getBadge(type, font, hackerNews, featuredOn);
+    const badge = await getBadge(id, type, font, hackerNews, featuredOn);
     res.setHeader("Content-Type", "image/svg+xml");
     res.setHeader("Cache-Control", "max-age=86400");
     return res.send(badge);
   } catch (error) {
-    res.status(500);
+    res.status(400);
     res.json({ error });
   }
 };
