@@ -2,11 +2,11 @@
 
 Embeddable Hacker News badges for your post/launch. A serverless function written in TypeScript and deployed on ZEIT.
 
-![Light badge example](https://hackerbadge.now.sh/api?id=8863)
+[![Light badge example](https://hackerbadge.now.sh/api?id=8863)](https://hackerbadge.now.sh/api?id=8863)
 
-![Orange badge example](https://hackerbadge.now.sh/api?id=8863&type=orange)
+[![Orange badge example](https://hackerbadge.now.sh/api?id=8863&type=orange)](https://hackerbadge.now.sh/api?id=8863&type=orange)
 
-![Dark badge example](https://hackerbadge.now.sh/api?id=8863&type=dark)
+[![Dark badge example](https://hackerbadge.now.sh/api?id=8863&type=dark)](https://hackerbadge.now.sh/api?id=8863&type=dark)
 
 ## ⭐ Usage
 
@@ -35,7 +35,7 @@ Embeddable Hacker News badges for your post/launch. A serverless function writte
 
 ### I18N
 
-![Hindi badge example](https://hackerbadge.now.sh/api?id=8863&hackerNews=हैकर%20न्यूज़&featuredOn=प्रदर्शित%20op)
+[![Hindi badge example](https://hackerbadge.now.sh/api?id=8863&hackerNews=हैकर%20न्यूज़&featuredOn=प्रदर्शित)](https://hackerbadge.now.sh/api?id=8863&hackerNews=हैकर%20न्यूज़&featuredOn=प्रदर्शित)
 
 https://hackerbadge.now.sh/api?id=8863&hackerNews=हैकर%20न्यूज़&featuredOn=प्रदर्शित
 
